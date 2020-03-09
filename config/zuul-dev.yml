@@ -1,10 +1,9 @@
 spring:
   application:
     name: zuul
-  cloud: 
-    config: 
+  cloud:
+    config:
       override-none: true
-        
 server:
   port: 3001
   
@@ -29,10 +28,3 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 500
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: hystrix.stream
-            
